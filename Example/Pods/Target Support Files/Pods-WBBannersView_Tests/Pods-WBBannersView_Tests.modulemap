@@ -1,0 +1,6 @@
+framework module Pods_WBBannersView_Tests {
+  umbrella header "Pods-WBBannersView_Tests-umbrella.h"
+
+  export *
+  module * { export * }
+}

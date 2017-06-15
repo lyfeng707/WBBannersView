@@ -1,0 +1,16 @@
+PODS:
+  - WBBannersView (0.1.0)
+
+DEPENDENCIES:
+  - WBBannersView (from `../`)
+
+EXTERNAL SOURCES:
+  WBBannersView:
+    :path: ../
+
+SPEC CHECKSUMS:
+  WBBannersView: 968c16ee8cefb17f256638eba40259930b76b932
+
+PODFILE CHECKSUM: 7845006755cc21a2531e18ba9006166790b32665
+
+COCOAPODS: 1.2.1
