@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'WBBannersView_Example' do
+  pod 'WBBannersView', :path => '../'
+
+  target 'WBBannersView_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
