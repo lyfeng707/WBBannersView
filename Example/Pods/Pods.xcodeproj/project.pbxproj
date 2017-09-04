@@ -7,19 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		07767322ED69BCB5E291A0502F104F15 /* WBBannerView.h in Headers */ = {isa = PBXBuildFile; fileRef = 711AD7F0E217016E606B99E9BB4D96D9 /* WBBannerView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1A9B295A5E10980E907CCE797F4E1470 /* WBBannersView-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 5AC8C3FBE22C01BB345F398F44352217 /* WBBannersView-dummy.m */; };
 		29AECCC85F3FFE0E874B36A2095CD969 /* Pods-WBBannersView_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = DF785862BB704758186A61E9834E3383 /* Pods-WBBannersView_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		302C8D36637776DF891F2258C40A893F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
 		33A3672C919157F87F47674D9D744272 /* Pods-WBBannersView_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B8E9F19A3A2E4A968B4D7BD604B19E2 /* Pods-WBBannersView_Tests-dummy.m */; };
+		5C1CB124F05D49B890858FB7E2376EDF /* WBBannersView-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = FC930457427DF1C4781F357CF7FC03F4 /* WBBannersView-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		6701AE56C97C614882B4BA655B557E5C /* Pods-WBBannersView_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 83DC9E95923BB0F758FE10AD7917BE62 /* Pods-WBBannersView_Example-dummy.m */; };
 		6E0F0B49942B5C5ECAC9D5E746F1F9D4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
+		748DA8804221685DF5D8C1580864169E /* WBPageControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E1C2AA39CE2D1FBB8B723CEAB5F470C /* WBPageControl.m */; };
 		7769108E891015C140EE84E5579CED62 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
-		A33911F03032456E5751F4ECB1FBBF04 /* WBPageControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 06E460D30D79BAB7107C310D3F3DE0B7 /* WBPageControl.m */; };
-		AABB18D98DC68B3B53D2AD081EBD5DFD /* WBBannersView-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 5AC8C3FBE22C01BB345F398F44352217 /* WBBannersView-dummy.m */; };
-		B0F69D5212D8AF7B7DE383A164482A7B /* WBBannerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5447C8D1F3A5B6ED1D756D40CA13A5B4 /* WBBannerView.m */; };
-		BC38419EDDA077C871D9057CB0A3FDD8 /* WBBannersView-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = FC930457427DF1C4781F357CF7FC03F4 /* WBBannersView-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9DBF226373706651BC292838961E59CD /* WBPageControl.h in Headers */ = {isa = PBXBuildFile; fileRef = 06D709673B5D7FB4B9574E5E46A7C63E /* WBPageControl.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A2AD24B2AD8EF993356E4EEAF3984F85 /* WBBannerView.h in Headers */ = {isa = PBXBuildFile; fileRef = DC4C2F45E3CCF610839E82BC525F1C9A /* WBBannerView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B3961D0A4E06866A535E1E6DCB53604D /* WBBannerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 654C5BE2F1AD25D5F96A67834B1646F9 /* WBBannerView.m */; };
 		D5E2AF7DB5CE288F033A55F88EE45842 /* Pods-WBBannersView_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 00C14C9ADF833DDF87D246A2C0893CFA /* Pods-WBBannersView_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		EEBE7CBDA2C743DDA3AC7D62D0DAEE05 /* WBPageControl.h in Headers */ = {isa = PBXBuildFile; fileRef = E7A0F964DD6B9270BB640506C106F421 /* WBPageControl.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,38 +34,38 @@
 
 /* Begin PBXFileReference section */
 		00C14C9ADF833DDF87D246A2C0893CFA /* Pods-WBBannersView_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-WBBannersView_Tests-umbrella.h"; sourceTree = "<group>"; };
-		031D67F553FB8FB5D1BF98D88967F8BF /* Pods_WBBannersView_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_WBBannersView_Tests.framework; path = "Pods-WBBannersView_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		031D67F553FB8FB5D1BF98D88967F8BF /* Pods_WBBannersView_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WBBannersView_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		0637FAC7998D388A59920F062B5BA9F0 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		06E460D30D79BAB7107C310D3F3DE0B7 /* WBPageControl.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = WBPageControl.m; sourceTree = "<group>"; };
+		06D709673B5D7FB4B9574E5E46A7C63E /* WBPageControl.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = WBPageControl.h; sourceTree = "<group>"; };
 		0A4975A942264A82998F6D78919A71CF /* Pods-WBBannersView_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-WBBannersView_Example-resources.sh"; sourceTree = "<group>"; };
 		188DA4276ADD3BB923CA04A6B74CD6B2 /* Pods-WBBannersView_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-WBBannersView_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		18993324734A2D2DFE26CFB04E108DBB /* Pods-WBBannersView_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-WBBannersView_Tests-frameworks.sh"; sourceTree = "<group>"; };
-		1961D5836D19B7BF2602E5A1D5F1AB2E /* WBBannersView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = WBBannersView.framework; path = WBBannersView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1961D5836D19B7BF2602E5A1D5F1AB2E /* WBBannersView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = WBBannersView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3379592D1256D0E922CFC9C1C0D4AB60 /* Pods-WBBannersView_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-WBBannersView_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
 		39605427B42F9F547FE9C56D9CE5496B /* Pods-WBBannersView_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-WBBannersView_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		3F91C7A629CC0057135D2830F9D48D92 /* Pods-WBBannersView_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-WBBannersView_Tests-resources.sh"; sourceTree = "<group>"; };
 		45C5242C65F522FBE9F24519B19D65F7 /* Pods-WBBannersView_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-WBBannersView_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		46D3138DF21F04FA8461645C97416D23 /* Pods-WBBannersView_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-WBBannersView_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
-		5447C8D1F3A5B6ED1D756D40CA13A5B4 /* WBBannerView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = WBBannerView.m; sourceTree = "<group>"; };
 		5AC8C3FBE22C01BB345F398F44352217 /* WBBannersView-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "WBBannersView-dummy.m"; sourceTree = "<group>"; };
 		5B8E9F19A3A2E4A968B4D7BD604B19E2 /* Pods-WBBannersView_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-WBBannersView_Tests-dummy.m"; sourceTree = "<group>"; };
+		654C5BE2F1AD25D5F96A67834B1646F9 /* WBBannerView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = WBBannerView.m; sourceTree = "<group>"; };
 		6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		66CCC19EEF0526418B5BF5548A210BA2 /* Pods_WBBannersView_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_WBBannersView_Example.framework; path = "Pods-WBBannersView_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		66CCC19EEF0526418B5BF5548A210BA2 /* Pods_WBBannersView_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WBBannersView_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6814FCC9D0E76960808B54293B139DD8 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6C513F6146B396559D1D2C5A32B37391 /* WBBannersView.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = WBBannersView.xcconfig; sourceTree = "<group>"; };
-		711AD7F0E217016E606B99E9BB4D96D9 /* WBBannerView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = WBBannerView.h; sourceTree = "<group>"; };
 		7B9459DF55BC631ADFECFF1F9298B239 /* Pods-WBBannersView_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-WBBannersView_Example-acknowledgements.plist"; sourceTree = "<group>"; };
 		83DC9E95923BB0F758FE10AD7917BE62 /* Pods-WBBannersView_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-WBBannersView_Example-dummy.m"; sourceTree = "<group>"; };
 		89E6036229FE8289F9D29569AEE8DDC4 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		8E1C2AA39CE2D1FBB8B723CEAB5F470C /* WBPageControl.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = WBPageControl.m; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		9FB6F2B42F96CE59517D2FF76A39F070 /* WBBannersView-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "WBBannersView-prefix.pch"; sourceTree = "<group>"; };
 		DC2BB93651F2CFFB8FA4E037FF2454EA /* Pods-WBBannersView_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-WBBannersView_Example-frameworks.sh"; sourceTree = "<group>"; };
+		DC4C2F45E3CCF610839E82BC525F1C9A /* WBBannerView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = WBBannerView.h; sourceTree = "<group>"; };
 		DDA3AC1165B296EDC2B7DF36029E8DB9 /* Pods-WBBannersView_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-WBBannersView_Example.release.xcconfig"; sourceTree = "<group>"; };
 		DF785862BB704758186A61E9834E3383 /* Pods-WBBannersView_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-WBBannersView_Example-umbrella.h"; sourceTree = "<group>"; };
-		E2739758DEEC4FB00F64EF2850A37E2B /* Pods-WBBannersView_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-WBBannersView_Tests.modulemap"; sourceTree = "<group>"; };
-		E3CED00E3A84ACAA7E47D53F71A5A18F /* WBBannersView.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = WBBannersView.modulemap; sourceTree = "<group>"; };
-		E737C81088E6A2C644B84D057F5A0D2C /* Pods-WBBannersView_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-WBBannersView_Example.modulemap"; sourceTree = "<group>"; };
-		E7A0F964DD6B9270BB640506C106F421 /* WBPageControl.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = WBPageControl.h; sourceTree = "<group>"; };
+		E2739758DEEC4FB00F64EF2850A37E2B /* Pods-WBBannersView_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-WBBannersView_Tests.modulemap"; sourceTree = "<group>"; };
+		E3CED00E3A84ACAA7E47D53F71A5A18F /* WBBannersView.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = WBBannersView.modulemap; sourceTree = "<group>"; };
+		E737C81088E6A2C644B84D057F5A0D2C /* Pods-WBBannersView_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-WBBannersView_Example.modulemap"; sourceTree = "<group>"; };
 		F91D0D302236F6361987568DAF2BACEB /* Pods-WBBannersView_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-WBBannersView_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		FC930457427DF1C4781F357CF7FC03F4 /* WBBannersView-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "WBBannersView-umbrella.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -134,15 +134,6 @@
 			path = "Target Support Files/Pods-WBBannersView_Tests";
 			sourceTree = "<group>";
 		};
-		421348CD0F65CA52537C49C578486A0C /* WBBannersView */ = {
-			isa = PBXGroup;
-			children = (
-				A1BDC65246CC13BC87ADFA37D2DF64B2 /* Classes */,
-			);
-			name = WBBannersView;
-			path = WBBannersView;
-			sourceTree = "<group>";
-		};
 		554A178744DD34144DA0FA3A37261FAD /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
@@ -155,6 +146,17 @@
 			);
 			name = "Support Files";
 			path = "Example/Pods/Target Support Files/WBBannersView";
+			sourceTree = "<group>";
+		};
+		59061369317DA8418AEA273B82C629D6 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				DC4C2F45E3CCF610839E82BC525F1C9A /* WBBannerView.h */,
+				654C5BE2F1AD25D5F96A67834B1646F9 /* WBBannerView.m */,
+				06D709673B5D7FB4B9574E5E46A7C63E /* WBPageControl.h */,
+				8E1C2AA39CE2D1FBB8B723CEAB5F470C /* WBPageControl.m */,
+			);
+			path = Classes;
 			sourceTree = "<group>";
 		};
 		7DB346D0F39D3F0E887471402A8071AB = {
@@ -176,23 +178,19 @@
 			name = "Development Pods";
 			sourceTree = "<group>";
 		};
-		A1BDC65246CC13BC87ADFA37D2DF64B2 /* Classes */ = {
+		9DAF60B1DE61BF7E22ACE2F2A0660ACD /* WBBannersView */ = {
 			isa = PBXGroup;
 			children = (
-				711AD7F0E217016E606B99E9BB4D96D9 /* WBBannerView.h */,
-				5447C8D1F3A5B6ED1D756D40CA13A5B4 /* WBBannerView.m */,
-				E7A0F964DD6B9270BB640506C106F421 /* WBPageControl.h */,
-				06E460D30D79BAB7107C310D3F3DE0B7 /* WBPageControl.m */,
+				59061369317DA8418AEA273B82C629D6 /* Classes */,
 			);
-			name = Classes;
-			path = Classes;
+			path = WBBannersView;
 			sourceTree = "<group>";
 		};
 		AFDE769A658B0C1C68DEC215AB0BEDD0 /* WBBannersView */ = {
 			isa = PBXGroup;
 			children = (
 				554A178744DD34144DA0FA3A37261FAD /* Support Files */,
-				421348CD0F65CA52537C49C578486A0C /* WBBannersView */,
+				9DAF60B1DE61BF7E22ACE2F2A0660ACD /* WBBannersView */,
 			);
 			name = WBBannersView;
 			path = ../..;
@@ -236,13 +234,13 @@
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		769C8670FA1EDCCC5CF3AE23BEFE70D6 /* Headers */ = {
+		BAB0B4EF26C6F50075BB37EB022DC893 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BC38419EDDA077C871D9057CB0A3FDD8 /* WBBannersView-umbrella.h in Headers */,
-				07767322ED69BCB5E291A0502F104F15 /* WBBannerView.h in Headers */,
-				EEBE7CBDA2C743DDA3AC7D62D0DAEE05 /* WBPageControl.h in Headers */,
+				5C1CB124F05D49B890858FB7E2376EDF /* WBBannersView-umbrella.h in Headers */,
+				A2AD24B2AD8EF993356E4EEAF3984F85 /* WBBannerView.h in Headers */,
+				9DBF226373706651BC292838961E59CD /* WBPageControl.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -286,9 +284,9 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 286CA0BE077DF05A4ECDA367856C3D44 /* Build configuration list for PBXNativeTarget "WBBannersView" */;
 			buildPhases = (
-				0FF351BE54F3E4C452CD23E774F45E46 /* Sources */,
+				869A9E1E0732DABE8F372580A997A95F /* Sources */,
 				D22550FB75EEB401DCFC1C765D2B18C3 /* Frameworks */,
-				769C8670FA1EDCCC5CF3AE23BEFE70D6 /* Headers */,
+				BAB0B4EF26C6F50075BB37EB022DC893 /* Headers */,
 			);
 			buildRules = (
 			);
@@ -346,16 +344,6 @@
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
-		0FF351BE54F3E4C452CD23E774F45E46 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				AABB18D98DC68B3B53D2AD081EBD5DFD /* WBBannersView-dummy.m in Sources */,
-				B0F69D5212D8AF7B7DE383A164482A7B /* WBBannerView.m in Sources */,
-				A33911F03032456E5751F4ECB1FBBF04 /* WBPageControl.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		6F1033B3479FD28958EB5DF853355D0D /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -369,6 +357,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				33A3672C919157F87F47674D9D744272 /* Pods-WBBannersView_Tests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		869A9E1E0732DABE8F372580A997A95F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1A9B295A5E10980E907CCE797F4E1470 /* WBBannersView-dummy.m in Sources */,
+				B3961D0A4E06866A535E1E6DCB53604D /* WBBannerView.m in Sources */,
+				748DA8804221685DF5D8C1580864169E /* WBPageControl.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -7,11 +7,12 @@
 //
 
 #import "WBBannerView.h"
+
 static NSUInteger const kItemScale = 50;
 @interface WBBannerViewCollectionViewCell : UICollectionViewCell
 @property(nonatomic,strong) UIImageView *imageView;
 @end
-
+//2017.9.4
 @implementation WBBannerViewCollectionViewCell
 
 - (instancetype)initWithFrame:(CGRect)frame
@@ -57,7 +58,6 @@ static NSUInteger const kItemScale = 50;
         [self addSubview:self.bannersCollectionView];
 
         [self addSubview:self.pageControl];
-
     }
     return self;
 }
@@ -65,15 +65,18 @@ static NSUInteger const kItemScale = 50;
 - (void)layoutSubviews
 {
     [super layoutSubviews];
-    CGPoint center = self.center;
+    CGFloat centerX = self.frame.size.width / 2.f;
     CGFloat centerY = self.frame.size.height - 10 - self.pageControl.frame.size.height / 2.f;
-    self.pageControl.center = CGPointMake(center.x, centerY);
+    self.pageControl.center = CGPointMake(centerX, centerY);
+    //直接设置约束时需要设置collectionView的layout
     self.flowLayout.itemSize = self.frame.size;
 }
+
 
 - (void)setFrame:(CGRect)frame
 {
     [super setFrame:frame];
+    //直接设置frame时需要设置collectionView的layout （用autolayout时 ，传进的frame不正确需要在 layoutSubviews 设置）
     self.flowLayout.itemSize = frame.size;
 }
 
@@ -88,7 +91,16 @@ static NSUInteger const kItemScale = 50;
     [self.bannersCollectionView reloadData];
 
 
-    [self.bannersCollectionView scrollToItemAtIndexPath:[NSIndexPath indexPathForRow:_banners.count * kItemScale / 2 inSection:0] atScrollPosition:UICollectionViewScrollPositionLeft animated:NO];
+
+    if (banners.count <= 1) {
+        self.scrollEnable  = NO;
+        self.pageControl.hidden = YES;
+    }
+
+
+    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(0.1 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+        [self.bannersCollectionView scrollToItemAtIndexPath:[NSIndexPath indexPathForItem:_banners.count * kItemScale / 2 inSection:0] atScrollPosition:UICollectionViewScrollPositionNone animated:NO];
+    });
 }
 
 - (void)setScrollEnable:(BOOL)scrollEnable
@@ -104,8 +116,12 @@ static NSUInteger const kItemScale = 50;
 }
 
 - (void)autoScrollNextPage {
+    //    NSInteger page = _currentPage + 1;
+    //    [self.bannersCollectionView setContentOffset:CGPointMake(self.bannersCollectionView.frame.size.width * page, 0) animated:YES];
+    //    [self.bannersCollectionView setContentOffset:CGPointMake(self.bannersCollectionView.contentOffset.x + self.frame.size.width, 0) animated:YES];
+    NSUInteger nextItem = (self.bannersCollectionView.contentOffset.x  /  self.frame.size.width ) + 1;
+    [self.bannersCollectionView scrollToItemAtIndexPath:[NSIndexPath indexPathForItem:nextItem inSection:0] atScrollPosition:UICollectionViewScrollPositionNone animated:YES];
 
-    [self.bannersCollectionView setContentOffset:CGPointMake(self.bannersCollectionView.contentOffset.x + self.frame.size.width, 0) animated:YES];
 }
 
 
@@ -123,7 +139,8 @@ static NSString *const ID = @"bannersCollectionViewID";
     if (self.setupImageCallBack) {
         self.setupImageCallBack(cell.imageView , self.banners[indexPath.row % self.banners.count].imageUrl);
     }
-    
+
+
     return cell;
 }
 
@@ -172,7 +189,7 @@ static NSString *const ID = @"bannersCollectionViewID";
         return;
     }
     // 确认中间区域
-    NSInteger min = self.banners.count * (kItemScale / 2);
+    NSInteger min = self.banners.count * (kItemScale / 2 - 1);
     NSInteger max = self.banners.count * (kItemScale / 2 + 1);
 
     NSInteger page = scrollView.contentOffset.x / scrollView.frame.size.width;
@@ -180,11 +197,13 @@ static NSString *const ID = @"bannersCollectionViewID";
 
     if (page < min || page > max) {
         page = min + page % self.banners.count;
+
         [scrollView setContentOffset:CGPointMake(page * scrollView.frame.size.width, 0) animated:NO];
+
     }
 
     _currentPage = page;
-    
+
 }
 
 
@@ -202,7 +221,7 @@ static NSString *const ID = @"bannersCollectionViewID";
         _bannersCollectionView.dataSource = self;
         _bannersCollectionView.delegate = self;
         [self addSubview:_bannersCollectionView];
-        
+
     }
     return _bannersCollectionView;
 }
@@ -224,12 +243,13 @@ static NSString *const ID = @"bannersCollectionViewID";
         _pageControl = [[WBPageControl alloc] init];
         _pageControl.currentPageIndicateImage = [UIImage imageNamed:@"currentPage"];
         _pageControl.otherPageIndicateImage = [UIImage imageNamed:@"otherPage"];
+
     }
     return _pageControl;
 }
 
 -(NSTimer *)scrollTimer {
-    if (_scrollTimer == nil && _autoPlayTimeInterval > 0) {
+    if (_scrollTimer == nil && _autoPlayTimeInterval > 0 && self.banners.count > 1) {
         _scrollTimer = [NSTimer scheduledTimerWithTimeInterval:_autoPlayTimeInterval target:self selector:@selector(autoScrollNextPage) userInfo:nil repeats:YES];
         [[NSRunLoop currentRunLoop] addTimer:_scrollTimer forMode:NSRunLoopCommonModes];
     }
