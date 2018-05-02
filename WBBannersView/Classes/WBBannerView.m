@@ -21,6 +21,8 @@ static NSUInteger const kItemScale = 50;
         self.imageView.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight;
         self.imageView.frame = self.contentView.bounds;
         [self.contentView addSubview:self.imageView];
+
+        self.backgroundColor = [UIColor redColor];
     }
     return self;
 }
